@@ -1,7 +1,7 @@
-NAME = megahone
+NAME = phonebook
 CXX = c++
 CFLAGS = -std=c++20
-SRCS = megaphone.cpp
+SRCS = main.cpp Phonebook.cpp Contact.cpp
 
 O_DIR = objects
 
@@ -17,6 +17,7 @@ $(O_DIR):
 
 $(O_DIR)/%.o: %.cpp | $(O_DIR)
 		$(CXX) $(CFLAGS) -c $< -o $@
+
 clean:
 		@rm -rf $(O_DIR)
 
@@ -25,4 +26,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re  
+.PHONY: all clean fclean re

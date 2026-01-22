@@ -14,5 +14,7 @@ class Phonebook
 	
 	public:
 		Phonebook();
-		void	addContact();
+		void	addContact(int _pos);
+		int		countSize(int pos);
+		void	listContact(std::string pos);
 };
