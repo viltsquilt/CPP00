@@ -5,6 +5,15 @@
 #include <cstring>
 #include "Contact.hpp"
 
+// Reset
+#define RESET "\033[0m"
+
+//Colors
+#define RED		"\033[31m"
+#define GREEN	"\033[32m"
+#define BLUE	"\033[94m"
+#define GOLD	"\033[33m"
+
 class PhoneBook
 {
 	private:
@@ -17,7 +26,7 @@ class PhoneBook
 		PhoneBook();
 		void	addContact(int _pos);
 		int		countPos(int size);
-		int		countSize();
-		void	showContact(std::string pos);
+		int		countSize(int size);
+		void	showContact(std::string pos, int size);
 		void	listContacts(int pos);
 };

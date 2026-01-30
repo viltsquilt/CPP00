@@ -1,6 +1,6 @@
 NAME = megahone
 CXX = c++
-CFLAGS = -std=c++20
+CFLAGS = -std=c++20 -Wall -Wextra -Werror
 SRCS = megaphone.cpp
 
 O_DIR = objects
